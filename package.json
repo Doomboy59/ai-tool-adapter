@@ -1,6 +1,6 @@
 {
   "name": "ai-tool-adapter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Universal tool schema adapter for AI providers (OpenAI, Anthropic, Gemini, Mistral)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
