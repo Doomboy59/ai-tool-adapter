@@ -1,5 +1,8 @@
 # ai-tool-adapter
 
+[![npm version](https://badge.fury.io/js/ai-tool-adapter.svg)](https://www.npmjs.com/package/ai-tool-adapter)
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 Universal AI tool schema adapter for function calling across multiple LLM providers.

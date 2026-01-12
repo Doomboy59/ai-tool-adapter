@@ -32,6 +32,14 @@
   ],
   "author": "mv",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Monyster/ai-tool-adapter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Monyster/ai-tool-adapter/issues"
+  },
+  "homepage": "https://github.com/Monyster/ai-tool-adapter#readme",
   "type": "commonjs",
   "devDependencies": {
     "@biomejs/biome": "2.3.11",
