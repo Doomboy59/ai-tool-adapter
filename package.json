@@ -1,0 +1,43 @@
+{
+  "name": "ai-tool-adapter",
+  "version": "1.0.1",
+  "description": "Universal tool schema adapter for AI providers (OpenAI, Anthropic, Gemini, Mistral)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepare": "husky",
+    "commit": "git-cz"
+  },
+  "keywords": [
+    "ai",
+    "openai",
+    "anthropic",
+    "claude",
+    "gemini",
+    "mistral",
+    "function-calling",
+    "tools",
+    "llm"
+  ],
+  "author": "mv",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "cz-conventional-changelog": "3.3.0",
+    "husky": "9.1.7",
+    "typescript": "^5.0.0",
+    "vitest": "4.0.17"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

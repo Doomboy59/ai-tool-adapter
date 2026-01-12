@@ -1,0 +1,9 @@
+# Check if this is a regular commit (not merge, rebase, etc.)
+if [ "$2" = "" ] || [ "$2" = "message" ]; then
+  # Check if commit message is empty or only contains comments
+  if ! grep -qv '^#' "$1" 2>/dev/null || [ ! -s "$1" ]; then
+    echo "⚠️  Please use 'git cz' or 'npm run commit' instead of 'git commit'"
+    echo "This ensures consistent commit message formatting."
+    exit 1
+  fi
+fi
