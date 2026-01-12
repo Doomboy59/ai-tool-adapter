@@ -2,9 +2,9 @@
  * Tests for Google Gemini adapter
  */
 
-import { describe, it, expect } from 'vitest';
+import { describe, expect, it } from 'vitest';
+import type { UniversalTool } from '../types';
 import { geminiAdapter } from './gemini';
-import { UniversalTool } from '../types';
 
 describe('geminiAdapter', () => {
   it('should convert a basic tool with required params', () => {

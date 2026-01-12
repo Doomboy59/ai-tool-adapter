@@ -2,9 +2,9 @@
  * Tests for OpenAI adapter
  */
 
-import { describe, it, expect } from 'vitest';
+import { describe, expect, it } from 'vitest';
+import type { UniversalTool } from '../types';
 import { openaiAdapter } from './openai';
-import { UniversalTool } from '../types';
 
 describe('openaiAdapter', () => {
   it('should convert a basic tool with required params', () => {

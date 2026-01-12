@@ -2,9 +2,9 @@
  * Integration tests for the public API
  */
 
-import { describe, it, expect } from 'vitest';
+import { describe, expect, it } from 'vitest';
 import { adapt, adaptAll, getProviders } from './index';
-import { UniversalTool } from './types';
+import type { UniversalTool } from './types';
 
 describe('adapt', () => {
   const sampleTool: UniversalTool = {
@@ -86,7 +86,11 @@ describe('adaptAll', () => {
       name: 'calculate',
       description: 'Perform calculation',
       params: {
-        operation: { type: 'string', enum: ['add', 'subtract'], required: true },
+        operation: {
+          type: 'string',
+          enum: ['add', 'subtract'],
+          required: true,
+        },
         a: { type: 'number', required: true },
         b: { type: 'number', required: true },
       },
@@ -233,10 +237,16 @@ describe('Cross-provider consistency', () => {
 
     const expectedEnum = ['option1', 'option2', 'option3'];
 
-    expect(openai.function.parameters.properties.enum_param.enum).toEqual(expectedEnum);
-    expect(anthropic.input_schema.properties.enum_param.enum).toEqual(expectedEnum);
+    expect(openai.function.parameters.properties.enum_param.enum).toEqual(
+      expectedEnum
+    );
+    expect(anthropic.input_schema.properties.enum_param.enum).toEqual(
+      expectedEnum
+    );
     expect(gemini.parameters.properties.enum_param.enum).toEqual(expectedEnum);
-    expect(mistral.function.parameters.properties.enum_param.enum).toEqual(expectedEnum);
+    expect(mistral.function.parameters.properties.enum_param.enum).toEqual(
+      expectedEnum
+    );
   });
 
   it('should preserve default values across all providers', () => {
@@ -245,9 +255,13 @@ describe('Cross-provider consistency', () => {
     const gemini = adapt(tool, 'gemini') as any;
     const mistral = adapt(tool, 'mistral') as any;
 
-    expect(openai.function.parameters.properties.optional_param.default).toBe(42);
+    expect(openai.function.parameters.properties.optional_param.default).toBe(
+      42
+    );
     expect(anthropic.input_schema.properties.optional_param.default).toBe(42);
     expect(gemini.parameters.properties.optional_param.default).toBe(42);
-    expect(mistral.function.parameters.properties.optional_param.default).toBe(42);
+    expect(mistral.function.parameters.properties.optional_param.default).toBe(
+      42
+    );
   });
 });

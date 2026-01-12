@@ -13,7 +13,11 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "prepare": "husky",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "format": "biome format --write",
+    "lint": "biome lint --write",
+    "check": "biome check --write",
+    "ci": "biome ci"
   },
   "keywords": [
     "ai",
@@ -30,6 +34,7 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@biomejs/biome": "2.3.11",
     "cz-conventional-changelog": "3.3.0",
     "husky": "9.1.7",
     "typescript": "^5.0.0",

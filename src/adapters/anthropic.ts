@@ -7,7 +7,7 @@
  * @see https://docs.anthropic.com/claude/docs/tool-use
  */
 
-import { UniversalTool, ToolParam } from '../types';
+import type { ToolParam, UniversalTool } from '../types';
 
 interface AnthropicProperty {
   type: string;

@@ -22,11 +22,11 @@
  * ```
  */
 
-import { UniversalTool, Provider } from './types';
-import { openaiAdapter } from './adapters/openai';
 import { anthropicAdapter } from './adapters/anthropic';
 import { geminiAdapter } from './adapters/gemini';
 import { mistralAdapter } from './adapters/mistral';
+import { openaiAdapter } from './adapters/openai';
+import type { Provider, UniversalTool } from './types';
 
 /**
  * Adapter registry mapping provider names to their adapter functions
@@ -65,7 +65,9 @@ export function adapt(tool: UniversalTool, provider: Provider): unknown {
   const adapter = adapters[provider];
 
   if (!adapter) {
-    throw new Error(`Unknown provider: ${provider}. Supported providers: ${getProviders().join(', ')}`);
+    throw new Error(
+      `Unknown provider: ${provider}. Supported providers: ${getProviders().join(', ')}`
+    );
   }
 
   return adapter(tool);
@@ -89,7 +91,10 @@ export function adapt(tool: UniversalTool, provider: Provider): unknown {
  * const openaiTools = adaptAll(tools, 'openai');
  * ```
  */
-export function adaptAll(tools: UniversalTool[], provider: Provider): unknown[] {
+export function adaptAll(
+  tools: UniversalTool[],
+  provider: Provider
+): unknown[] {
   return tools.map((tool) => adapt(tool, provider));
 }
 
@@ -111,4 +116,4 @@ export function getProviders(): Provider[] {
 /**
  * Export types for TypeScript consumers
  */
-export type { UniversalTool, ToolParam, Provider, ParamType } from './types';
+export type { ParamType, Provider, ToolParam, UniversalTool } from './types';

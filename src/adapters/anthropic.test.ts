@@ -2,9 +2,9 @@
  * Tests for Anthropic (Claude) adapter
  */
 
-import { describe, it, expect } from 'vitest';
+import { describe, expect, it } from 'vitest';
+import type { UniversalTool } from '../types';
 import { anthropicAdapter } from './anthropic';
-import { UniversalTool } from '../types';
 
 describe('anthropicAdapter', () => {
   it('should convert a basic tool with required params', () => {

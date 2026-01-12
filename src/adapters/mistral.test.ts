@@ -2,9 +2,9 @@
  * Tests for Mistral AI adapter
  */
 
-import { describe, it, expect } from 'vitest';
+import { describe, expect, it } from 'vitest';
+import type { UniversalTool } from '../types';
 import { mistralAdapter } from './mistral';
-import { UniversalTool } from '../types';
 
 describe('mistralAdapter', () => {
   it('should convert a basic tool with required params', () => {

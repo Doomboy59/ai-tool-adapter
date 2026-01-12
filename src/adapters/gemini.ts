@@ -7,7 +7,7 @@
  * @see https://ai.google.dev/docs/function_calling
  */
 
-import { UniversalTool, ToolParam } from '../types';
+import type { ToolParam, UniversalTool } from '../types';
 
 interface GeminiProperty {
   type: string;

@@ -7,7 +7,7 @@
  * @see https://platform.openai.com/docs/guides/function-calling
  */
 
-import { UniversalTool, ToolParam } from '../types';
+import type { ToolParam, UniversalTool } from '../types';
 
 interface OpenAIProperty {
   type: string;

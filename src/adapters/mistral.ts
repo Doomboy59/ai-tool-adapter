@@ -7,7 +7,7 @@
  * @see https://docs.mistral.ai/capabilities/function_calling/
  */
 
-import { UniversalTool, ToolParam } from '../types';
+import type { ToolParam, UniversalTool } from '../types';
 
 interface MistralProperty {
   type: string;
